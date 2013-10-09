@@ -182,6 +182,10 @@ vim: tabstop=2 shiftwidth=2 softtabstop=2:
         <small><a href="http://www.openstack.org/software/"
                 title="About OpenStack" target="_blank">(More...)</a></small>
       </h3>
+      <aside class="notes">
+        In July 2010 Rackspace Hosting and NASA jointly launched an open-source
+        cloud-software initiative known as OpenStack.
+      </aside>
     </section>
 
     <section>
@@ -197,6 +201,54 @@ vim: tabstop=2 shiftwidth=2 softtabstop=2:
       <h3>How about now? :D</h3>
       <a class="image" href="http://www.solinea.com/2013/06/15/openstack-grizzly-architecture-revisited/"
          title="OpenStack Grizzly Architecture" target="_blank"><img src="images/openstack-arch-grizzly-logical-v2.jpg"></a>
+    </section>
+
+    <section>
+      <h2>OpenStack is One Project</h2>
+      <h3>... but it's many many moving parts</h3>
+      <aside class="notes">
+        <ul>
+          <li>Each part can be deployed individually.</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section>
+      <a class="image" href="http://www.openstack.org/software/openstack-compute/"
+         title="OpenStack Compute" target="_blank"><img src="images/openstack-compute-icon.png"></a>
+      <h2>Compute (Nova)</h2>
+      <p>Offers on-demand computing resources by provisioning and managing large networks of virtual machines.</p>
+      <p>&nbsp;</p>
+      <p>Hey! Remember <strong>Virtualization</strong>? It's used here!</p>
+      <aside class="notes">
+        Virtualization, different hypervisors (libvirt, xen, hyperv, baremetal, vmware, powervm, ...)<br>
+        Popular Use-Cases:
+        <ul>
+          <li>IaaS providers</li>
+          <li>IT departments</li>
+          <li>processing big data (Hadoop for instance)</li>
+          <li>Scaling compute up/down on-demand for web applications</li>
+          <li>high-performance computing</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section>
+      <a class="image" href="http://www.openstack.org/software/openstack-compute/"
+         title="OpenStack Storage" target="_blank"><img src="images/openstack-object-storage-icon.png"></a>
+      <h2>Storage (Swift and Cinder)</h2>
+      <p>Object and Block storage for use with servers and applications.</p>
+      <aside class="notes">
+        <ul>
+          <li><strong>Object Storage(Swift):</strong> provides redundant,
+          scalable, <strong>distributed storage</strong> for static data such
+          as virtual machine, images, photos, emails, backups.</li>
+          <li><strong>Block Storage(Cinder):</strong> provides persistent block
+          level storage devices for use with OpenStack compute instances.
+          Manages creating, attaching and detaching block storages from
+          servers</li>
+        </ul>
+      </aside>
     </section>
 
     <section>
