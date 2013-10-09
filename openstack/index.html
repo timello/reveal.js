@@ -214,7 +214,7 @@ vim: tabstop=2 shiftwidth=2 softtabstop=2:
     </section>
 
     <section>
-      <a class="image" href="http://www.openstack.org/software/openstack-compute/"
+      <a class="image" href="http://www.openstack.org/software/openstack-compute"
          title="OpenStack Compute" target="_blank"><img src="images/openstack-compute-icon.png"></a>
       <h2>Compute (Nova)</h2>
       <p>Offers on-demand computing resources by provisioning and managing large networks of virtual machines.</p>
@@ -224,6 +224,7 @@ vim: tabstop=2 shiftwidth=2 softtabstop=2:
         Virtualization, different hypervisors (libvirt, xen, hyperv, baremetal, vmware, powervm, ...)<br>
         Popular Use-Cases:
         <ul>
+          <li>Amazon EC2 like</li>
           <li>IaaS providers</li>
           <li>IT departments</li>
           <li>processing big data (Hadoop for instance)</li>
@@ -234,12 +235,13 @@ vim: tabstop=2 shiftwidth=2 softtabstop=2:
     </section>
 
     <section>
-      <a class="image" href="http://www.openstack.org/software/openstack-compute/"
+      <a class="image" href="http://www.openstack.org/software/openstack-storate"
          title="OpenStack Storage" target="_blank"><img src="images/openstack-object-storage-icon.png"></a>
       <h2>Storage (Swift and Cinder)</h2>
       <p>Object and Block storage for use with servers and applications.</p>
       <aside class="notes">
         <ul>
+          <li>Amazon S3 like</li>
           <li><strong>Object Storage(Swift):</strong> provides redundant,
           scalable, <strong>distributed storage</strong> for static data such
           as virtual machine, images, photos, emails, backups.</li>
@@ -249,6 +251,41 @@ vim: tabstop=2 shiftwidth=2 softtabstop=2:
           servers</li>
         </ul>
       </aside>
+    </section>
+
+    <section>
+      <a class="image" href="http://www.openstack.org/software/openstack-networking"
+         title="OpenStack Networking" target="_blank"><img src="images/openstack-networking-icon.png"></a>
+       <h2>Networking (Neutron)</h2>
+       <p>Pluggable, scalable, API-driven network and IP management</p>
+      <aside class="notes">
+        <ul>
+          <li>Flat networks or VLANs</li>
+          <li>Manage IP addresses static, or DHCP, Floating IPs (reroute traffic) in case of maintenance</li>
+          <li>users can create their own network...</li>
+        </ul>
+       </aside>
+    </section>
+
+    <section>
+      <a class="image" href="http://www.openstack.org/software/openstack-networking"
+         title="OpenStack Networking" target="_blank"><img src="images/openstack-networking-icon.png"></a>
+      <h2>Dashboard (Horizon)</h2>
+      <p>Provides administrators and users a graphical interface to access,
+         provision and automate cloud-based resources.</p>
+      <aside class="notes">
+        <ul>
+          <li>Provides self-service for users to provision their own resources
+          within the limits set by administrators.</li>
+        </ul>
+       </aside>
+    </section>
+
+    <section>
+      <h3>OpenStack Typical Sample Installation</h3>
+      <a class="image" href="http://docs.openstack.org/"
+         title="OpenStack Sample Installation"
+         target="_blank"><img src="images/typical-installation.jpg"></a>
     </section>
 
     <section>
