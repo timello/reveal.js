@@ -7,9 +7,9 @@ vim: tabstop=2 shiftwidth=2 softtabstop=2:
  <head>
    <meta charset="utf-8">
 
-   <title>OpenStack - a n&uacute;vem livre</title>
+   <title>OpenStack - a nuvem livre</title>
 
-   <meta name="description" content="OpenStack: a n&uacute;vem livre">
+   <meta name="description" content="OpenStack: a nuvem livre">
    <meta name="author" content="Tiago Mello">
 
    <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -41,7 +41,7 @@ vim: tabstop=2 shiftwidth=2 softtabstop=2:
    <div class="slides">
     <section>
       <h1>OpenStack:</h1>
-      <h3>A n&uacute;vem livre</h3>
+      <h3>A nuvem livre</h3>
       <p>
         <small>Mauro Rodrigues / <a href="http://twitter.com/_mauro">@_mauro</a></small><br>
         <small>Tiago Mello / <a href="http://twitter.com/timello">@timello</a></small>
@@ -56,7 +56,7 @@ vim: tabstop=2 shiftwidth=2 softtabstop=2:
       <h2>Agenda</h2>
       <ol>
         <li>Cloud</li>
-        <li>Virtualization vs Cloud</li>
+        <li>Virtualization</li>
         <li>OpenStack</li>
         <li>More about OpenStack...</li>
         <li>Community</li>
@@ -153,7 +153,7 @@ vim: tabstop=2 shiftwidth=2 softtabstop=2:
     </section>
 
     <section>
-      <h1>Virtualization</h1>
+      <h2>Virtualization</h2>
       <aside class="notes">
         Note that virtualization is not part of cloud computing definitions according to
         NIST.
@@ -282,10 +282,79 @@ vim: tabstop=2 shiftwidth=2 softtabstop=2:
     </section>
 
     <section>
+      <h2>Identity Service (Keystone)</h2>
+      <p>Keystone provides a single point of integration for OpenStack policy, catalog, token and authentication.
+        <a href="http://keystone.openstack.org"
+           title="Keystone documentation">(More...)</a></p>
+    </section>
+
+    <section>
+      <h2>Image service (Glance)</h2>
+      <p>Provides services for discovering, registering, and retrieving virtual
+        machine images. It centralizes virtual images for users and other cloud
+        services.
+        <a href="http://glance.openstack.org"
+           title="Glance documentation">(More...)</a></p>
+      <aside class="notes">
+        VM images made available through Glance can be stored in a variety of
+        locations from simple filesystems to object-storage systems like the
+        OpenStack Swift project.
+      </aside>
+    </section>
+
+    <section>
+      <h2>Billing service (Ceilometer)</h2>
+      <p>The ceilometer project aims to deliver a unique point of contact for
+        billing systems to acquire all of the measurements they need to establish
+        customer billing, across all current OpenStack core components with work
+        underway to support future OpenStack components.
+        <a href="http://docs.openstack.org/developer/ceilometer/"
+           title="Ceilometer documentation">(More...)</a></p>
+      <aside class="notes">
+        Ceilometer has been integrated to OpenStack core components on Grizzly release.
+      </aside>
+    </section>
+
+    <section>
+      <h2>Orchestration service (Heat)</h2>
+      <p>Heat provides a template based orchestration for describing a cloud
+        application by executing appropriate OpenStack API calls to generate
+        running cloud applications.
+      <a href="http://docs.openstack.org/developer/heat/"
+           title="Heat documentation">(More...)</a></p>
+      <aside class="notes">
+      </aside>
+    </section>
+
+    <section>
+      <a class="image" href="http://www.solinea.com/2013/06/15/openstack-grizzly-architecture-revisited/"
+         title="OpenStack Grizzly Conceptual"
+         target="_blank"><img src="images/openstack-arch-grizzly-conceptual-v2.jpg"></a>
+    </section>
+
+    <section>
+      <h3>OpenStack Compute Logical Architecture</h3>
+      <a class="image" href="http://www.solinea.com/2013/06/15/openstack-grizzly-architecture-revisited/"
+         title="OpenStack Nova Logical Architecture"
+         target="_blank"><img src="images/nova-cactus-logical.gif"></a>
+    </section>
+
+    <section>
       <h3>OpenStack Typical Sample Installation</h3>
       <a class="image" href="http://docs.openstack.org/"
          title="OpenStack Sample Installation"
          target="_blank"><img src="images/typical-installation.jpg"></a>
+
+      <aside class="notes">
+        <strong>TIME FOR QUESTIONS!</strong>
+      </aside>
+    </section>
+
+    <section>
+      <h2>OpenStack Community</h2>
+      <a class="image" href="http://www.openstack.org/community/"
+         title="OpenStack Community"
+         target="_blank"><img src="images/community.jpg"></a>
     </section>
 
     <section>
